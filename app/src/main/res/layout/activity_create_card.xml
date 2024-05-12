@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/introbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".CreateCard">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Details"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"/>
+
+    <EditText
+        android:id="@+id/create_title"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_edittetext"
+        android:backgroundTint="@color/lightpick"
+        android:hint="Enter Task"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/create_priority"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:hint="Priority"-->
+<!--        android:padding="15dp"-->
+<!--        android:background="@drawable/custom_edittetext"-->
+<!--        android:textColorHint="#BFBBBB"-->
+<!--        android:textColor="@color/white"-->
+<!--        />-->
+
+    <Spinner
+        android:id="@+id/create_priority_spinner"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edittetext"
+        android:backgroundTint="@color/lightpick"
+        android:entries="@array/priority_array"
+        android:padding="15dp"
+        android:textColor="@color/black" />
+
+    <!-- TextView to display selected due date -->
+    <Button
+        android:id="@+id/pick_date_button"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/pick"
+        android:text="@string/pick_due_date" />
+
+    <TextView
+        android:id="@+id/due_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/save"
+        app:cornerRadius="10dp" />
+
+</LinearLayout>

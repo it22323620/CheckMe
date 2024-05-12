@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CheckMe</string>
+    <string name="select_priority_hint">Select Priority</string>
+    <string name="checkme">CheckMe</string>
+    <string name="logo">Logo</string>
+    <string name="pick_due_date">Pick Due Date</string>
+    <string name="save">Save</string>
+    <string-array name="priority_array">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+</resources>
